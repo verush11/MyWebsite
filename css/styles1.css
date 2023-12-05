@@ -1,0 +1,184 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url("../background.png");
+    background-size: cover;
+    overflow: hidden;
+}
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    /* Set opacity to 50% */
+    object-fit: cover;
+}
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.movable-object {
+    position: absolute;
+    filter: opacity(50%);
+    cursor: pointer;
+}
+
+#movableImage1 {
+    left: 264.984px;
+    top: 280.992px;
+ 
+}
+
+#movableImage2 {
+    left: 869.984px;
+    top: 280.984px;
+   
+}
+#movableImage3 {
+    left: 653px;
+    top: 469px;
+    
+}
+#movableImage4 {
+    left: 772.984px;
+    top: 467.992px;
+  
+}
+
+#movableImage5 {
+    left: 672.992px;
+    top: 477.984px;
+   
+}
+
+#movableImage6 {
+    left: 563.992px;
+    top: 627.992px;
+   
+}
+
+#movableImage7 {
+    left: 662.992px;
+    top: 575.992px;
+    
+}
+
+#movableImage8 {
+    left: 631.977px;
+    top: 576.977px;
+    
+}
+
+#movableImage9 {
+    left: 609.977px;
+    top: 611.977px;
+    
+}
+
+#movableImage10 {
+    left: 766.992px;
+    top: 657.992px;
+    
+}
+.icon-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center; /* Alinhe os itens verticalmente no centro */
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: row; /* Alinha os ícones sociais em linha horizontal */
+    opacity: 0;
+    transition: opacity 0.3s linear, transform 0.3s ease-out; /* Adiciona transição para transform */
+    transform: translateX(-20px); /* Define a posição inicial */
+}
+
+.social-icon {
+    margin-right: 10px; /* Espaçamento entre os ícones sociais */
+    order: 1; /* Ajuste a ordem dos ícones sociais */
+}
+
+.icon-container img {
+    margin-right: 10px; /* Adicione margem à direita no ícone de compartilhamento */
+    order: 2; /* Ajuste a ordem do ícone de compartilhamento */
+    height: 20px; /* Define a altura para 20px */
+}
+
+.icon-container:hover .social-icons {
+    opacity: 1;
+    transform: translateX(0); /* Define a posição final */
+}
+
+.icon-container img {
+    width: 20px; /* Ajuste o tamanho do ícone conforme necessário */
+    height: 20px;
+    cursor: pointer; /* Adicione um cursor apontador para indicar que é clicável */
+    opacity: 0.5; /* Defina a opacidade padrão */
+    transition: opacity 0.3s ease;
+}
+.icon-container img:hover {
+    opacity: 0.8;
+}
+
+.corner-icons {
+    z-index: 1;
+    position: fixed;
+    top: 0px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.corner-icons a {
+    text-decoration: none;
+    display: flex;
+    align-items: center; /* Alinha os ícones verticalmente no centro */
+    margin-right: 20px; /* Espaço mínimo entre os ícones */
+}
+
+.corner-icons a img {
+    width: 30px;
+    height: 30px;
+    transition: opacity 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    border-radius: 50%;
+    margin-bottom: 5px; /* Espaço entre o ícone e o texto */
+}
+
+
+.corner-icons  span {
+    margin-left:-100px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    text-align: center;
+}
+.icon-hover{
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    width: 500px;
+    right: 0;
+}
+
+.corner-icons a:hover img {
+    opacity: 0.8;
+}
+
+.corner-icons a:hover span {
+    opacity: 1;
+}

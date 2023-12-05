@@ -1,0 +1,298 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url("../Fundo3.png");
+    background-size: cover;
+    overflow: hidden;
+    margin: 0;
+}
+
+
+.object {
+    position: absolute;
+    left: 0px;
+    top: 1px;
+}
+
+.object1 {
+    position: absolute;
+    left: 0px;
+    top: 1px;
+    transform: translateY(0px);
+    animation: float 6s ease-in-out infinite;
+    transition: transform 0.5s ease-out;
+}
+
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    /* Set opacity to 50% */
+    object-fit: cover;
+}
+
+.movable-object {
+    position: absolute;
+}
+
+#movableImage11 {
+    z-index: 1;
+    left: -3px;
+    top: 395px;
+    opacity: 0.88;
+}
+
+#movableImage12 {
+    left: 450px;
+    top: 100px;
+    width: 30%;
+    rotate: -45deg;
+}
+
+#movableImage9 {
+    left: 449px;
+    top: 27px;
+    width: 29%;
+    opacity: 0.6;
+}
+
+.bola {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    position: absolute;
+    cursor: pointer;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#bola2 {
+    left: 1010px;
+    top: 334px;
+    opacity: 0.5;
+    cursor: pointer;
+    cursor: pointer;
+}
+
+#bola3 {
+    left: 797px;
+    top: 80px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#bola4 {
+    left: 174px;
+    top: 247px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#bola5 {
+    left: 183px;
+    top: 68px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#bola6 {
+    left: 294px;
+    top: 709px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#bola7 {
+    left: 814px;
+    top: 504px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#bola8 {
+    left: 240px;
+    top: 3px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#bola9 {
+    left: 803px;
+    top: 69px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#bola10 {
+    left: 1186px;
+    top: 125px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#bola11 {
+    left: 211px;
+    top: 264px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#bola12 {
+    left: 1353px;
+    top: 392px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#bola13 {
+    left: -6px;
+    top: 173px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#bola14 {
+    left: 1160px;
+    top: 622px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#bola15 {
+    z-index: 1;
+    left: -14px;
+    top: 556px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#bola16 {
+    left: 1027px;
+    top: 138px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#bola17 {
+    left: 304px;
+    top: 0px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+.corner-icons {
+    margin-top: 20px;
+    z-index: 1;
+    position: fixed;
+    top: 0px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.corner-icons a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    /* Alinha os ícones verticalmente no centro */
+    margin-right: 20px;
+    /* Espaço mínimo entre os ícones */
+}
+
+.corner-icons a img {
+    width: 30px;
+    height: 30px;
+    transition: opacity 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    /* Espaço entre o ícone e o texto */
+}
+
+.corner-icons a:hover img {
+    opacity: 0.8;
+}
+
+.corner-icons a:hover span {
+    opacity: 1;
+}
+
+.icon-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    /* Alinhe os itens verticalmente no centro */
+}
+
+
+.corner-icons a span {
+    position: absolute; 
+    font-size: 12px;
+    opacity: 0;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    /* Alinha os ícones sociais em linha horizontal */
+    opacity: 0;
+    transition: opacity 0.3s linear, transform 0.3s ease-out;
+    /* Adiciona transição para transform */
+    transform: translateX(-20px);
+    /* Define a posição inicial */
+}
+
+.social-icon {
+    margin-right: 10px;
+    /* Espaçamento entre os ícones sociais */
+    order: 1;
+    /* Ajuste a ordem dos ícones sociais */
+}
+
+.icon-container img {
+    margin-right: 10px;
+    /* Adicione margem à direita no ícone de compartilhamento */
+    order: 2;
+    /* Ajuste a ordem do ícone de compartilhamento */
+    height: 20px;
+    /* Define a altura para 20px */
+}
+
+.icon-container:hover .social-icons {
+    opacity: 1;
+    transform: translateX(0);
+    /* Define a posição final */
+}
+
+.icon-container img {
+    width: 20px;
+    /* Ajuste o tamanho do ícone conforme necessário */
+    height: 20px;
+    cursor: pointer;
+    /* Adicione um cursor apontador para indicar que é clicável */
+    opacity: 0.5;
+    /* Defina a opacidade padrão */
+    transition: opacity 0.3s ease;
+}
+
+.icon-container img:hover {
+    opacity: 0.8;
+}
+
+.icon-hover-2{
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 370px;
+}
